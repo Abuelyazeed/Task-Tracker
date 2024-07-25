@@ -19,42 +19,48 @@ namespace Task_Tracker
             //5. Exit
 
             Console.WriteLine("Welcome to my task tracker!");
-            Console.WriteLine("Please enter a number from 1 to 5");
 
-            string userChoice = Console.ReadLine();
-
-            switch (userChoice)
+            while (true)
             {
-                case "1":
+                Console.WriteLine("Please enter a number from 1 to 5");
+
+                string userChoice = Console.ReadLine();
+
+                switch (userChoice)
                 {
-                    //Add task"
-                    AddTask();
-                    break;
-                }
-                case "2":
-                {
-                    //View all tasks
-                    break;
-                }
-                case "3":
-                {
-                    //Mark task
-                    break;
-                }
-                case "4":
-                {
-                    //Remove task
-                    break;
-                }
-                case "5":
-                {
-                    //Exit
-                    break;
-                }
-                default:
-                {
-                    Console.WriteLine("Please enter a number from 1 to 5");
-                    break;
+                    case "1":
+                    {
+                        //Add task"
+                        AddTask();
+                        break;
+                    }
+                    case "2":
+                    {
+                        //View all tasks
+                        ViewTasks();
+                        break;
+                    }
+                    case "3":
+                    {
+                        //Mark task
+                        break;
+                    }
+                    case "4":
+                    {
+                        //Remove task
+                        break;
+                    }
+                    case "5":
+                    {
+                        //Exit
+                        Environment.Exit(0);
+                        break;
+                    }
+                    default:
+                    {
+                        Console.WriteLine("Please enter a number from 1 to 5");
+                        break;
+                    }
                 }
             }
         }
@@ -66,6 +72,15 @@ namespace Task_Tracker
             tasks[taskIndex] = newTask;
             Console.WriteLine("Task added");
             taskIndex++;
+        }
+
+        private static void ViewTasks()
+        {
+            Console.WriteLine("Tasks:");
+            for (int i = 0; i < taskIndex; i++)
+            {
+                Console.WriteLine($"Task {i + 1}: {tasks[i]}");
+            }
         }
     }
 }
