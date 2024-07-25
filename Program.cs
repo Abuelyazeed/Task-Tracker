@@ -4,6 +4,9 @@ namespace Task_Tracker
 {
     public class Program
     {
+        static string[] tasks = new string[100];
+        static int taskIndex = 0;
+
         public static void Main(string[] args)
         {
             //Welcome User
@@ -16,6 +19,7 @@ namespace Task_Tracker
             //5. Exit
 
             Console.WriteLine("Welcome to my task tracker!");
+            Console.WriteLine("Please enter a number from 1 to 5");
 
             string userChoice = Console.ReadLine();
 
@@ -23,30 +27,45 @@ namespace Task_Tracker
             {
                 case "1":
                 {
-                    Console.WriteLine("Add task");
+                    //Add task"
+                    AddTask();
                     break;
                 }
                 case "2":
                 {
-                    Console.WriteLine("View all");
+                    //View all tasks
                     break;
                 }
                 case "3":
                 {
-                    Console.WriteLine("Mark task");
+                    //Mark task
                     break;
                 }
                 case "4":
                 {
-                    Console.WriteLine("Remove task");
+                    //Remove task
                     break;
                 }
                 case "5":
                 {
-                    Console.WriteLine("Exit");
+                    //Exit
+                    break;
+                }
+                default:
+                {
+                    Console.WriteLine("Please enter a number from 1 to 5");
                     break;
                 }
             }
+        }
+
+        private static void AddTask()
+        {
+            Console.WriteLine("Enter task name");
+            string newTask = Console.ReadLine();
+            tasks[taskIndex] = newTask;
+            Console.WriteLine("Task added");
+            taskIndex++;
         }
     }
 }

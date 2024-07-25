@@ -1,0 +1,15 @@
+/Users/ahmedmohamed/Desktop/Task Tracker/bin/Debug/net8.0/Task Tracker
+/Users/ahmedmohamed/Desktop/Task Tracker/bin/Debug/net8.0/Task Tracker.deps.json
+/Users/ahmedmohamed/Desktop/Task Tracker/bin/Debug/net8.0/Task Tracker.runtimeconfig.json
+/Users/ahmedmohamed/Desktop/Task Tracker/bin/Debug/net8.0/Task Tracker.dll
+/Users/ahmedmohamed/Desktop/Task Tracker/bin/Debug/net8.0/Task Tracker.pdb
+/Users/ahmedmohamed/Desktop/Task Tracker/obj/Debug/net8.0/Task Tracker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmedmohamed/Desktop/Task Tracker/obj/Debug/net8.0/Task Tracker.AssemblyInfoInputs.cache
+/Users/ahmedmohamed/Desktop/Task Tracker/obj/Debug/net8.0/Task Tracker.AssemblyInfo.cs
+/Users/ahmedmohamed/Desktop/Task Tracker/obj/Debug/net8.0/Task Tracker.csproj.CoreCompileInputs.cache
+/Users/ahmedmohamed/Desktop/Task Tracker/obj/Debug/net8.0/Task Tracker.sourcelink.json
+/Users/ahmedmohamed/Desktop/Task Tracker/obj/Debug/net8.0/Task Tracker.dll
+/Users/ahmedmohamed/Desktop/Task Tracker/obj/Debug/net8.0/refint/Task Tracker.dll
+/Users/ahmedmohamed/Desktop/Task Tracker/obj/Debug/net8.0/Task Tracker.pdb
+/Users/ahmedmohamed/Desktop/Task Tracker/obj/Debug/net8.0/Task Tracker.genruntimeconfig.cache
+/Users/ahmedmohamed/Desktop/Task Tracker/obj/Debug/net8.0/ref/Task Tracker.dll
