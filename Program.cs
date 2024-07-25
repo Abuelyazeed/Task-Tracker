@@ -24,6 +24,11 @@ namespace Task_Tracker
             while (true)
             {
                 Console.WriteLine("Please enter a number from 1 to 5");
+                Console.WriteLine("1.  Add");
+                Console.WriteLine("2.  View");
+                Console.WriteLine("3.  Complete");
+                Console.WriteLine("4.  Remove");
+                Console.WriteLine("5.  Exit");
 
                 string userChoice = Console.ReadLine();
 
