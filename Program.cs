@@ -4,8 +4,9 @@ namespace Task_Tracker
 {
     public class Program
     {
-        static string[] tasks = new string[100];
-        static int taskIndex = 0;
+        static List<string> tasks = new List<string>();
+
+        //static int taskIndex = 0;
 
         public static void Main(string[] args)
         {
@@ -49,6 +50,7 @@ namespace Task_Tracker
                     case "4":
                     {
                         //Remove task
+                        RemoveTask();
                         break;
                     }
                     case "5":
@@ -70,17 +72,22 @@ namespace Task_Tracker
         {
             Console.WriteLine("Enter task name");
             string newTask = Console.ReadLine();
-            tasks[taskIndex] = newTask;
+            tasks.Add(newTask);
+            //tasks[taskIndex] = newTask;
             Console.WriteLine("Task added");
-            taskIndex++;
+            //taskIndex++;
         }
 
         private static void ViewTasks()
         {
             Console.WriteLine("Tasks:\n");
-            for (int i = 0; i < taskIndex; i++)
+            // for (int i = 0; i < taskIndex; i++)
+            // {
+            //     Console.WriteLine($"Task {i + 1}: {tasks[i]}");
+            // }
+            foreach (var task in tasks)
             {
-                Console.WriteLine($"Task {i + 1}: {tasks[i]}");
+                Console.WriteLine($"Task {tasks.IndexOf(task) + 1}: {task}");
             }
         }
 
@@ -98,6 +105,15 @@ namespace Task_Tracker
             {
                 Console.WriteLine("Please enter a valid task number");
             }
+        }
+
+        private static void RemoveTask()
+        {
+            Console.WriteLine($"Enter task number to delete");
+
+            int taskNumber = Convert.ToInt32(Console.ReadLine());
+
+            tasks.RemoveAt(taskNumber - 1);
         }
     }
 }
