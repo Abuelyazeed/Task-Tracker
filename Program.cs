@@ -43,6 +43,7 @@ namespace Task_Tracker
                     case "3":
                     {
                         //Mark task
+                        MarkComplete();
                         break;
                     }
                     case "4":
@@ -76,10 +77,26 @@ namespace Task_Tracker
 
         private static void ViewTasks()
         {
-            Console.WriteLine("Tasks:");
+            Console.WriteLine("Tasks:\n");
             for (int i = 0; i < taskIndex; i++)
             {
                 Console.WriteLine($"Task {i + 1}: {tasks[i]}");
+            }
+        }
+
+        private static void MarkComplete()
+        {
+            Console.WriteLine($"Enter task number");
+
+            int taskNumber = Convert.ToInt32(Console.ReadLine());
+
+            try
+            {
+                tasks[taskNumber - 1] += " --COMPLETED";
+            }
+            catch
+            {
+                Console.WriteLine("Please enter a valid task number");
             }
         }
     }
